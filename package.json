@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./src/index.js",
-    "watch": "nodemon -x \"npm run start\""
+    "watch": "nodemon -x \"npm run start\"",
+    "daemon:start": "pm2 start ./src/index.js --name \"StreamDeck\"",
+    "daemon:stop": "pm2 stop StreamDeck",
+    "daemon:delete": "pm2 delete StreamDeck"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
     "elgato-stream-deck": "^3.2.0",
     "hex-rgb": "^4.1.0",
     "nodemon": "^2.0.2",
+    "pm2": "^4.2.3",
     "sharp": "^0.24.0",
     "text2png": "^2.3.0"
   }
