@@ -1,0 +1,27 @@
+{
+  "name": "streamdeck",
+  "version": "1.0.0",
+  "description": "streamdeck",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "watch": "nodemon -x \"npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohnoitsfraa/streamdeck.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohnoitsfraa/streamdeck/issues"
+  },
+  "homepage": "https://github.com/ohnoitsfraa/streamdeck#readme",
+  "dependencies": {
+    "elgato-stream-deck": "^3.2.0",
+    "hex-rgb": "^4.1.0",
+    "nodemon": "^2.0.2",
+    "sharp": "^0.24.0",
+    "text2png": "^2.3.0"
+  }
+}
